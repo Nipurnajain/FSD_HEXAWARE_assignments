@@ -1,0 +1,77 @@
+/* CSS for Login Form */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color:#b376e0 ;
+    
+}
+
+.input_wrap {
+    margin-bottom: 15px;
+}
+
+.input_wrap label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_wrap input[type="email"],
+.input_wrap input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.input_wrap input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot_password {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.not_member {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.not_member a {
+    color: blue;
+}
+
+.submit_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7f27be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+}
+
+.submit_btn:hover {
+    background-color: #9e78b9;
+}

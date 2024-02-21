@@ -1,0 +1,29 @@
+[32m2024-02-01 16:54:31.663[0;39m [INFO] com.hexaware.spring_rest_jpa.SpringRestJpaApplication [main] Starting SpringRestJpaApplication using Java 17.0.9 with PID 162636 (E:\springtoolworkspace\spring_rest_jpa\target\classes started by ASUS in E:\springtoolworkspace\spring_rest_jpa)
+[32m2024-02-01 16:54:31.666[0;39m [INFO] com.hexaware.spring_rest_jpa.SpringRestJpaApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2024-02-01 16:54:32.420[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2024-02-01 16:54:32.478[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+[32m2024-02-01 16:54:32.981[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+[32m2024-02-01 16:54:32.990[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2024-02-01 16:54:32.990[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.18]
+[32m2024-02-01 16:54:33.102[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2024-02-01 16:54:33.102[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1382 ms
+[32m2024-02-01 16:54:33.243[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2024-02-01 16:54:33.296[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.20.Final
+[32m2024-02-01 16:54:33.299[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2024-02-01 16:54:33.554[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2024-02-01 16:54:33.580[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2024-02-01 16:54:33.916[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c71cf3e
+[32m2024-02-01 16:54:33.918[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2024-02-01 16:54:33.969[0;39m [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[32m2024-02-01 16:54:33.971[0;39m [WARN] org.hibernate.orm.deprecation [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[32m2024-02-01 16:54:34.874[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2024-02-01 16:54:34.949[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-02-01 16:54:35.225[0;39m [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+[32m2024-02-01 16:54:35.758[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2024-02-01 16:54:36.587[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+[32m2024-02-01 16:54:36.598[0;39m [INFO] com.hexaware.spring_rest_jpa.SpringRestJpaApplication [main] Started SpringRestJpaApplication in 5.417 seconds (process running for 6.192)
+[32m2024-02-01 17:56:31.648[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(66)-127.0.0.1] Application shutdown requested.
+[32m2024-02-01 17:56:31.712[0;39m [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(66)-127.0.0.1] Stopping service [Tomcat]
+[32m2024-02-01 17:56:31.742[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(66)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-02-01 17:56:31.756[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(66)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2024-02-01 17:56:31.762[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(66)-127.0.0.1] HikariPool-1 - Shutdown completed.

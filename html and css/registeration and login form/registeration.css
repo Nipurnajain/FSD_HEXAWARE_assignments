@@ -1,0 +1,90 @@
+
+
+/* CSS for Registration Form */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration_form {
+    width: 400px;
+    padding: 20px;
+    border: 14px solid #761bcc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form_wrap {
+    margin-bottom: 20px;
+}
+
+.input_wrap {
+    margin-bottom: 15px;
+}
+
+.input_wrap label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_wrap input[type="text"],
+.input_wrap input[type="email"],
+.input_wrap input[type="number"],
+.input_wrap input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input_wrap input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.input_wrap .radio_wrap label {
+    display: inline-block;
+}
+
+.input_grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_grp .input_wrap {
+    width: 48%; 
+}
+
+.input_grp .input_wrap input[type="number"],
+.input_grp .input_wrap input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #761bcc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit_btn:hover {
+    background-color: #9354ce;
+}
