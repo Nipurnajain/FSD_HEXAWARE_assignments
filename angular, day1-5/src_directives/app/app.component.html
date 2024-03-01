@@ -1,0 +1,36 @@
+<h1 *ngIf="false" >Hello friends</h1>
+<h2 *ngIf="true">WELCOME TO ANGULAR</h2>
+
+<div>
+
+Enter choice : <input type="text" [(ngModel)]="num1" >
+
+<div [ngSwitch]="num1"> 
+  <div *ngSwitchCase="'one'">One is selected</div>
+  <div *ngSwitchCase="'two'">Two is selected</div>
+  <div *ngSwitchDefault>Default is selected</div>
+
+</div>
+
+
+Enter choice : <input type="text" [(ngModel)]="tech" >
+
+<div [ngSwitch]="tech"> 
+  <div *ngSwitchCase="'java'"><img src="../assets/java.png" alt="Java logo"></div>
+  <div *ngSwitchCase="'.net'"><img src="../assets/net.png" alt=".net logo"></div>
+  <div *ngSwitchCase="'mysql'"><img src="../assets/mysql.png" alt="mysql logo"></div>
+  <div *ngSwitchDefault>this technology doesnt exists</div>
+
+</div>
+
+<div *ngFor="let i of arr; let j = index">Welcome {{i}} index{{j}}</div>
+
+
+<h2 [ngStyle]="{'color':textColor, 'background-color':bgColor}">This is css</h2>
+
+<div [ngClass]="isSpecial ? 'cls1': 'cls2' ">This div is special</div>
+
+<h2 class='ngNonBindable'>Hello </h2>                    <!---- when you dont want to exceute angular code but consider it as text-->
+
+<div class="card card-block" appCardHover>Card Hover Directive</div>  <!--appcardhover is the attribute of the directive -->
+

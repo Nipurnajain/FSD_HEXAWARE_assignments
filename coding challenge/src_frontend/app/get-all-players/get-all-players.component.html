@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table table-primary col-sm-12">
+
+        <tr>
+
+            <th>Player Id</th>
+            <th>Player name</th>
+            <th>Role</th>
+            <th>Jersey Number</th>
+            <th>Team country</th>
+            <th>Team</th>
+            <th>Total Matches</th>
+            <TH>Description</TH>
+        </tr>
+        <tr *ngFor="let player of playerList">
+
+            <td>{{player.playerId}}</td>
+            <td>{{player.playerName}}</td>
+            <td>{{player.role}}</td>
+            <td>{{player.jerseyNumber}}</td>
+            <td>{{player.teamCountry}}</td>
+            <td>{{player.teamName}}</td>
+            <td>{{player.totalMatches}}</td>
+            <td>{{player.description}}</td>
+
+
+
+
+
+        </tr>
+
+    </table>
+</div>

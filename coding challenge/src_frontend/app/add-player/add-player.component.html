@@ -1,0 +1,54 @@
+<form #myform="ngForm" method="post" class="container col-md-8" (ngSubmit)="insertPlayer(myform.value)">
+
+
+    <div class="form-group">
+        <label>Player Id</label><input type="number" placeholder="Enter player ID" class="form-control" #salcontrol="ngModel" name="playerId" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">ID is mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Player Name</label><input type="text" placeholder="Enter Player name" class="form-control" #enamecontrol="ngModel" name="playerName" required
+            ngModel>
+        <span style="color: green;" *ngIf="enamecontrol.touched && enamecontrol.invalid">Player Name is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Role</label><input type="text" placeholder="Enter role of the player(Batsman/Bowler/Allrounder)" class="form-control" #dojcontrol="ngModel" name="role" required ngModel>
+        <span style="color: green;" *ngIf="dojcontrol.touched && dojcontrol.invalid">role is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Jersey Number</label><input type="number" placeholder="Enter the jersey number" class="form-control" #salcontrol="ngModel" name="jerseyNumber" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">jersey Number is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Team Country</label><input type="text" placeholder="Enter the country of the player" class="form-control" #salcontrol="ngModel" name="teamCountry" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">country name is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Team Name</label><input type="text" placeholder="Enter the IPL team name " class="form-control" #salcontrol="ngModel" name="teamName" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">team Name is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Total no. of matches</label><input type="number" placeholder="Enter the total no. of matches played" class="form-control" #salcontrol="ngModel" name="totalMatches" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">totalMatches is Mandatory</span>
+    </div>
+
+    <div class="form-group">
+        <label>Description</label><input type="text" placeholder="Enter few words about the palyer" class="form-control" #salcontrol="ngModel" name="description" required
+            ngModel>
+        <span style="color: green;" *ngIf="salcontrol.touched && salcontrol.invalid">description is Mandatory</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="myform.invalid">Add</button>
+
+
+</form>

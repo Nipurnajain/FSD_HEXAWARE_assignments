@@ -1,0 +1,60 @@
+<h2 class="justify-content-center">add new restaurants here</h2>
+
+<div class="container col-md-8">
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <form (submit)="addRestaurant()" class="mt-4 border p-4 bg-light rounded" style="width: 600px;">
+      <div>
+        <label for="newRestaurantName" class="form-label">Restaurant Name</label><br>
+        <input type="text" placeholder="Restaurant" class="form-control" name="newRestaurantName"
+          [(ngModel)]="newRestaurantName">
+      </div>
+      <br>
+      <div>
+        <label for="newRestaurantLocation" class="form-label">Location</label><br>
+        <input type="text" placeholder="Location" class="form-control" name="newRestaurantLocation"
+          [(ngModel)]="newRestaurantLocation">
+      </div>
+      <br>
+      <div>
+        <label for="newRestaurantContact" class="form-label">Contact number</label><br>
+        <input type="text" placeholder="Contact" class="form-control" name="newRestaurantContact"
+          [(ngModel)]="newRestaurantContact">
+      </div>
+      <br>
+      <div>
+        <label for="newRestaurantRating" class="form-label">Rating</label><br>
+        <input type="number" placeholder="Rating" class="form-control" name="newRestaurantRating"
+          [(ngModel)]="newRestaurantRating">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>
+<br>
+<br>
+<h3>Restaurants List</h3>
+<div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Location</th>
+        <th>Contact</th>
+        <th>Rating</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let restaurant of restaurantList">
+        <td>{{ restaurant.name }}</td>
+        <td>{{ restaurant.location }}</td>
+        <td>{{ restaurant.contact }}</td>
+        <td>{{ restaurant.rating }}</td>
+        <td>
+          <button type="button" (click)="removeRestaurant(restaurant.id)" class="btn btn-danger">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
